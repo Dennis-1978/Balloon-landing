@@ -1,0 +1,28 @@
+// abstarcts
+@import 'abstracts/_variables.scss';
+@import 'abstracts/_mixins.scss';
+@import 'abstracts/_functions.scss';
+
+// base
+@import 'base/_animations.scss';
+@import 'base/_base.scss';
+@import 'base/_typography.scss';
+@import 'base/_utilities.scss';
+
+// components
+@import 'components/_button.scss';
+@import 'components/_button-text.scss';
+@import 'components/_composition.scss';
+@import 'components/adventure-card.scss';
+@import 'components/tour-card.scss';
+@import 'components/feedBack-card';
+@import 'components/bg-video';
+@import 'components/form';
+
+// layout
+@import 'layout/_header.scss';
+@import 'layout/_grid.scss';
+@import 'layout/footer';
+
+// pages
+@import 'pages/_home.scss';
