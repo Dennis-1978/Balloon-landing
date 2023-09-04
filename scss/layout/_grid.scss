@@ -7,6 +7,10 @@
     }
 
     @include clearfix;
+
+    @include respond(tab-land) {
+        max-width: 90.1rem;
+    } 
 }
 
 .col-1-of-2 {
@@ -15,6 +19,10 @@
 
 .col-1-of-3 {
     width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+
+    @include respond(tab-land) {
+        width: calc((100% - 2 * 2rem) / 3);
+    }
 }
 
 .col-2-of-3 {
@@ -25,6 +33,10 @@
 
 .col-1-of-4 {
     width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+
+    @include respond(tab-land) {
+        width: calc((100% - 3 * 2rem) / 4);
+    }
 }
 
 .col-2-of-4 {
@@ -45,4 +57,10 @@
     }
 
     float: left;
+
+    @include respond(tab-land) {
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    } 
 }

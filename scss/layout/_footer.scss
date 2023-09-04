@@ -17,6 +17,13 @@
         &:not(:last-child) {
             margin-right: 5rem;
         }
+
+        @include respond(tab-land) {
+            &:not(:last-child) {
+                margin-right: 1.6rem;
+            }
+        }
+    
     }
 
     &__link {

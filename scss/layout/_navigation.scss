@@ -42,7 +42,7 @@
             top: -0.8rem;
         }
         &::after {
-            top: 8rem;
+            top: 0.8rem;
         }
     }
 
@@ -135,12 +135,11 @@
 
     &__toggle:checked + &__button &__icon {
         background: transparent;
-
     }
 
     &__toggle:checked + &__button &__icon::before {
         transform: rotate(-45deg);
-        top:0;
+        top: 0;
     }
 
     &__toggle:checked + &__button &__icon::after {
