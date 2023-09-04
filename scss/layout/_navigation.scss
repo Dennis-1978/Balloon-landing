@@ -16,15 +16,16 @@
         cursor: pointer;
     }
 
+    // hamburger
     &__icon {
         position: relative;
-        margin-top: 40px;
+        margin-top: 4rem;
 
         &,
         &::after,
         &::before {
-            width: 30px;
-            height: 2px;
+            width: 3rem;
+            height: 0.2rem;
             background: $color-dark;
             display: inline-block;
         }
@@ -38,10 +39,10 @@
         }
 
         &::before {
-            top: -8px;
+            top: -0.8rem;
         }
         &::after {
-            top: 8px;
+            top: 8rem;
         }
     }
 
@@ -125,11 +126,11 @@
     }
 
     &__button:hover &__icon::before {
-        top: -10px;
+        top: -1rem;
     }
 
     &__button:hover &__icon::after {
-        top: 10px;
+        top: 1rem;
     }
 
     &__toggle:checked + &__button &__icon {
