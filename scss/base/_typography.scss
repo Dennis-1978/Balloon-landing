@@ -25,6 +25,12 @@ body {
         @include respond(tab-land) {
             font-size: 4rem;
         }
+
+        @include respond(tab-port) {
+            font-size: 3.6rem;
+            letter-spacing: 0.4rem;
+            margin-bottom: 0rem;
+        }
     }
 
     &__secondary {
@@ -43,6 +49,11 @@ body {
         @include respond(tab-land) {
             font-size: 3.5rem;
             margin-bottom: 3.5rem;
+        }
+
+        @include respond(tab-port) {
+            font-size: 3.1rem;
+            letter-spacing: 0rem;
         }
     }
 }
@@ -75,6 +86,10 @@ body {
     &_white {
         color: $color-white;
         background: none;
+    }
+
+    @include respond(tab-port) {
+        letter-spacing: 0.6rem;
     }
 }
 

@@ -11,6 +11,15 @@
     box-shadow: $box-shadow;
     border-radius: 0.3rem;
     overflow: hidden;
+
+    @include respond(tab-port) {
+        background: linear-gradient(
+            105deg,
+            rgba($color-white, 0.9) 0%,
+            rgba($color-white, 0.9) 100%,
+        ),
+        url(../img/taryn-elliott.jpg) center / cover no-repeat;
+    }
 }
 
 .form {
@@ -36,6 +45,12 @@
         }
     }
 
+    @include respond(tab-port) {
+        width: 100%;
+        padding-top: 3rem;
+        padding-left: 3rem;
+    }
+
 
     &__input {
         font-size: $font-size-paragraph;
@@ -57,6 +72,11 @@
 
         &:focus:invalid {
             border-bottom: 0.3rem solid #d76363;
+        }
+
+        @include respond(tab-port) {
+            width: 90%;
+            box-shadow: $box-shadow;
         }
     }
 

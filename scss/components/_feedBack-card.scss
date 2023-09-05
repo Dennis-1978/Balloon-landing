@@ -6,8 +6,18 @@
     margin: 0 auto;
     transform: skewX(330deg);
 
+    @include respond(tab-port) {
+        transform: skewX(350deg);
+        padding: 3rem;
+    }
+
     & > * {
         transform: skewX(-330deg);
+
+        @include respond(tab-port) {
+            transform: skewX(-350deg);
+            text-align: center;
+        }
     }
 
     &__img {
@@ -20,6 +30,12 @@
         margin-right: 4rem;
         overflow: hidden;
         backface-visibility: hidden;
+
+        @include respond(tab-port) {
+            float:none;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+        }
 
         img {
             height: 100%;
