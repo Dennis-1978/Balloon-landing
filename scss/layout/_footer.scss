@@ -25,11 +25,8 @@
         }
 
         @include respond(tab-port) {
-            
-
-            &:not(:last-child) {
-                margin: 0 3rem 3rem 0;
-            }
+            margin: 0;
+            padding: 2rem;
         }
     
     }

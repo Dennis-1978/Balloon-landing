@@ -19,7 +19,6 @@
             rgba($color-dark, 0.7)
         ),
         url(../img/adventure-background.jpg) center / cover no-repeat;
-    // clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
     transform: skewY(7deg);
 
     & > * {
@@ -34,6 +33,10 @@
 .section-tour {
     padding-top: 21rem;
     margin-bottom: 8rem;
+
+    @include respond(phone) {
+        padding: 15rem 0rem;
+    }
 }
 
 .section-feedBack {
@@ -44,4 +47,9 @@
 .section-book {
     padding: 10rem;
     background: linear-gradient(90deg, $color-brown-light, $color-brown-dark);
+
+    @include respond(tab-port) {
+        padding: 15rem 0rem;
+        padding: 2rem;
+    }
 }

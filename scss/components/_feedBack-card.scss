@@ -7,7 +7,7 @@
     transform: skewX(330deg);
 
     @include respond(tab-port) {
-        transform: skewX(350deg);
+        transform: skewX(0deg);
         padding: 3rem;
     }
 
@@ -15,7 +15,7 @@
         transform: skewX(-330deg);
 
         @include respond(tab-port) {
-            transform: skewX(-350deg);
+            transform: skewX(0deg);
             text-align: center;
         }
     }
@@ -27,6 +27,7 @@
         float: left;
         border-radius: 50rem;
         shape-outside: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
         margin-right: 4rem;
         overflow: hidden;
         backface-visibility: hidden;
