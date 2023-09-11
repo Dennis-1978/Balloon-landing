@@ -4,7 +4,7 @@
     -moz-perspective: 150rem;
     position: relative;
 
-    @include respond(tab-port) {
+    @media only screen and (max-width: 900px), (hover: none) {
         height: auto;
     }
 
@@ -22,7 +22,7 @@
         overflow: hidden;
 
         &_front {
-            @include respond(tab-port) {
+            @media only screen and (max-width: 900px), (hover: none) {
                 padding-bottom: 13rem;
             }
         }
@@ -35,16 +35,16 @@
             );
             transform: rotateY(180deg);
 
-            @include respond(tab-port) {
+            @media only screen and (max-width: 900px), (hover: none) {
                 transform: rotateY(0deg);
-                padding: 8rem;
+                padding: 8rem 0rem;
                 padding-top: 12rem;
                 margin-top: -11rem;
                 clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
             }
         }
 
-        @include respond(tab-port) {
+        @media only screen and (max-width: 900px), (hover: none) {
             height: auto;
             position: relative;
         }
@@ -81,7 +81,7 @@
                 no-repeat;
         }
 
-        @include respond(tab-port) {
+        @media only screen and (max-width: 900px), (hover: none) {
             height: 30rem;
         }
     }
@@ -159,7 +159,7 @@
         transform: translate(-50%, -50%);
         text-align: center;
 
-        @include respond(tab-port) {
+        @media only screen and (max-width: 900px), (hover: none) {
             position: relative;
             top: 0;
             left: 0;
