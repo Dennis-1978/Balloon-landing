@@ -18,7 +18,7 @@
             rgba($color-brown-light, 0.7) 0.03%,
             rgba($color-brown-dark, 0.7) 99.94%
         );
-        background-clip: text;
+        -webkit-background-clip: text;
         color: transparent;
     }
 
